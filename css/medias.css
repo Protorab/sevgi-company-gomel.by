@@ -43,9 +43,9 @@
 
     .address-phone {
         display: flex;
-flex-direction: column;
+        flex-direction: column;
         align-content: flex-start;
-    justify-content: center;
+        justify-content: center;
     }
 
     .address,
@@ -109,9 +109,8 @@ flex-direction: column;
     .main-text-slideshow {
         width: 90%;
     }
-
-
 }
+
 
 @media (max-width: 960px) {}
 
