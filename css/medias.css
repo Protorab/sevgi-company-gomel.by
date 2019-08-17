@@ -25,15 +25,27 @@
     .social-menu {
         width: 50%;
     }
+
+    .main-text {
+        margin-bottom: 50px;
+    }
+
+    .contacts {
+        width: 75%;
+    }
+
+    .address-phone {
+        flex-direction: column;
+    }
+
+    .address,
+    .phone {
+        width: 100%;
+        padding-bottom: 50px;
+    }
 }
 
-.main-text {
-    margin-bottom: 50px;
-}
 
-.contacts {
-    width: 75%;
-}
 
 @media (max-width: 1200px) {
 
