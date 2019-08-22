@@ -72,12 +72,12 @@
     .m-menu-link {
         display: none;
         color: #061e37;
-        font-size: 4rem;
+        font-size: 6rem;
     }
 
     .m-menu {
         padding: 0;
-        padding-top: 50px;
+        padding-top: 100px;
         margin: 0;
         position: fixed;
         right: 0;
@@ -85,7 +85,7 @@
         height: 100vh;
         width: 100%;
         list-style: none;
-        font-size: 4rem;
+        /* font-size: 100px; */
         line-height: 3rem;
         background-color: #061e37;
         z-index: 99;
@@ -101,16 +101,16 @@
     }
 
     .m-menu__active {
-        -webkit-transform: translateX(50%);
-        transform: translateX(50%);
+        -webkit-transform: translateX(40%);
+        transform: translateX(40%);
         transition: linear .2s;
         -webkit-transition: linear .2s;
         -moz-transition: linear .2s;
         -ms-transition: linear .2s;
         -o-transition: linear .2s;
-        -moz-transform: translateX(50%);
-        -ms-transform: translateX(50%);
-        -o-transform: translateX(50%);
+        -moz-transform: translateX(40%);
+        -ms-transform: translateX(40%);
+        -o-transform: translateX(40%);
     }
 
     .m-menu li {
@@ -118,6 +118,8 @@
         justify-content: flex-start;
         align-items: flex-start;
         font-weight: 700;
+        padding-top: 70px;
+        font-size: 5rem;
     }
 
     .m-menu a {
@@ -127,9 +129,9 @@
 
     .close-menu {
         position: fixed;
-        right: 600px;
+        right: 500px;
         top: 0px;
-        font-size: 6rem;
+        font-size: 9rem !important;
         color: #fff;
     }
 
@@ -365,7 +367,7 @@
 
     .services-item {
         display: grid;
-        grid-template-rows: repeat(3 minmax(269px, 270px));
+        grid-template-rows: repeat(3, minmax(269px, 270px));
         grid-template-columns: repeat(4, minmax(399px, 400px));
         grid-column-gap: 60px;
         grid-row-gap: 60px;
