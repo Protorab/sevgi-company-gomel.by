@@ -97,7 +97,11 @@ window.addEventListener("DOMContentLoaded", function () {
     // button.style = "display: none ";
     status.innerHTML = "Спасибо,в скором времени мы свжемся с вами!";
     $('._def_text').hide();
-    
+    setTimeout(function () {
+   $('.form_overley').fadeOut();
+   $('#message').val("");
+   $('.form_wrap').fadeOut();
+    }, 1000);
   }
 
   function error() {
@@ -132,8 +136,8 @@ function ajax(method, url, data, success, error) {
 }
 
 $('._show_form').click(function (e) {
-  var msg= $(this).attr('title')
-  $('#message').text("Хочук узать подробнее про "+msg);
+  var msg = $(this).attr('title')
+  $('#message').val("Хочу узнать подробнее про " + msg);
   $('._def_text').show();
   $('#my-form-status').text("");
   $('.form_overley').fadeIn();
@@ -143,22 +147,24 @@ $('._show_form').click(function (e) {
 });
 $(document).ready(function () {
   $('.send_btn').click(function (e) {
-    $('#my-form-button').click(); 
+    $('#my-form-button').click();
     e.preventDefault();
   });
 });
 $('.close_form').click(function (e) {
   $('.form_overley').fadeOut();
   $('.form_wrap').fadeOut();
-    $('._def_text').show();
-    $('#my-form-status').text("");
+  $('._def_text').show();
+  $('#my-form-status').text("");
+    $('#message').val("");
   e.preventDefault();
 });
-$('.form_overley').click(function (e) { 
+$('.form_overley').click(function (e) {
   $('.form_overley').fadeOut();
+  $('#message').val("");
   $('.form_wrap').fadeOut();
-      $('._def_text').show();
-      $('#my-form-status').text();
+  $('._def_text').show();
+  $('#my-form-status').text("");
   e.preventDefault();
-  
+
 });
