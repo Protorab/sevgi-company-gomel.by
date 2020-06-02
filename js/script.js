@@ -95,7 +95,7 @@ window.addEventListener("DOMContentLoaded", function () {
   function success() {
     form.reset();
     // button.style = "display: none ";
-    status.innerHTML = "Спасибо,в скором времени мы свжемся с вами!";
+    status.innerHTML = "Спасибо,в скором времени мы свяжемся с вами!";
     $('._def_text').hide();
     setTimeout(function () {
    $('.form_overley').fadeOut();
