@@ -905,8 +905,8 @@ hr {
 	background: transparent;
 	width: 500px;
 	height: auto;
-	top: 0;
-	bottom: 0;
+	top: 20%;
+	// bottom: 0;
 	left: 0;
 	right: 0;
 	margin: auto auto;
@@ -992,7 +992,7 @@ hr {
 		top: 1rem;
 		right: 1rem;
 	}
-	.p{
+	p{
 		font-size: 2.6rem;
 		text-align: center;
 		margin-bottom: 3rem;

@@ -95,11 +95,13 @@ window.addEventListener("DOMContentLoaded", function () {
   function success() {
     form.reset();
     // button.style = "display: none ";
-    status.innerHTML = "Thanks!";
+    status.innerHTML = "Спасибо,в скором времени мы свжемся с вами!";
+    $('._def_text').hide();
   }
 
   function error() {
-    status.innerHTML = "Oops! There was a problem.";
+    status.innerHTML = "Извините,что-то пошло нетак, попробуте ещё раз!";
+    $('._def_text').hide();
   }
 
   // handle the form submission event
@@ -131,6 +133,8 @@ function ajax(method, url, data, success, error) {
 $('._show_form').click(function (e) {
   var msg= $(this).attr('title')
   $('#message').text("Хочук узать подробнее про "+msg);
+  $('._def_text').show();
+  $('#my-form-status').text();
   $('.form_overley').fadeIn();
   $('.form_wrap').fadeIn();
   e.preventDefault();
@@ -145,11 +149,15 @@ $(document).ready(function () {
 $('.close_form').click(function (e) {
   $('.form_overley').fadeOut();
   $('.form_wrap').fadeOut();
+    $('._def_text').show();
+    $('#my-form-status').text();
   e.preventDefault();
 });
 $('.form_overley').click(function (e) { 
   $('.form_overley').fadeOut();
   $('.form_wrap').fadeOut();
+      $('._def_text').show();
+      $('#my-form-status').text();
   e.preventDefault();
   
 });
