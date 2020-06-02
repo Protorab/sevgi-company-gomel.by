@@ -97,6 +97,7 @@ window.addEventListener("DOMContentLoaded", function () {
     // button.style = "display: none ";
     status.innerHTML = "Спасибо,в скором времени мы свжемся с вами!";
     $('._def_text').hide();
+    
   }
 
   function error() {
@@ -134,7 +135,7 @@ $('._show_form').click(function (e) {
   var msg= $(this).attr('title')
   $('#message').text("Хочук узать подробнее про "+msg);
   $('._def_text').show();
-  $('#my-form-status').text();
+  $('#my-form-status').text("");
   $('.form_overley').fadeIn();
   $('.form_wrap').fadeIn();
   e.preventDefault();
@@ -150,7 +151,7 @@ $('.close_form').click(function (e) {
   $('.form_overley').fadeOut();
   $('.form_wrap').fadeOut();
     $('._def_text').show();
-    $('#my-form-status').text();
+    $('#my-form-status').text("");
   e.preventDefault();
 });
 $('.form_overley').click(function (e) { 
